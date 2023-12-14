@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact - SHIGAMECLUB</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header id="header">
+        <div class="header-container">
+            <a href="index.html"><img src="images/logo.jpg" alt="ShiGameClubLogo" id="logo"></a>
+            <div class="header-nav">
+                <ul>
+                    <li><a href="index.html"><img src="images/home.png" alt="homeIcon">HOME</a></li>
+                    <li><a href="about.html"><img src="images/about.png" alt="aboutIcon">ABOUT</a></li>
+                    <li><a href="contact.html"><img src="images/contact.png" alt="contactIcon">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section id="contact" role="main">
+        <h1 class="title">If you would like to support us, please send a message.</h1>
+        <div id="contactImage"><img src="images/contact.jpg" alt="contact"></div>
+        <div class="form">
+            <form method="post" id="regEx" action="submit.html">
+            <fieldset>
+                <div class="formfield">
+                    <div class="labeltext">
+                        <label for="name" class="user">Name:</label>
+                        <input type="text" id="name" name="name" size="30" maxlength="15" value="" autofocus="autofocus" />
+                        <div class="user_error error" id="name_error">* Please enter your name.</div>
+                        <label for="phone" class="user">Phone:</label>
+                        <input type="tel" id="phone" name="phone" size="30" maxlength="15" />
+                        <div class="user_error error" id="phone_error">* Please enter your phone number.</div>
+                        <label for="email" class="user">Email:</label>
+                        <input type="text" id="email" name="email" size="30" maxlength="40" />
+                        <div class="user_error error" id="email_error">* Please enter your email address.</div>
+                        <input type="checkbox" id="checkbox" name="checkbox" value="check">
+                        <label for="checkbox" class="user">I'd like to get response.</label>
+                    </div>
+                    <br>
+                    <br>
+                    <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="1" cols="2"></textarea>
+                <div class="user_error error" id="message_error">* Please enter your message.</div>
+                <input type="reset" value="Clear" />
+                <input type="submit" value="Send" />
+                </div>
+            </fieldset>
+            </form>
+        </div>
+        </section>
+    <footer>
+        <div id="footer-content">
+            <p>SHI GAME CLUB. Your ultimate gaming destination</p>
+            <p><a href="index.html">HOME</a> | <a href="about.html">ABOUT</a> | <a href="contact.html">CONTACT</a></p>
+            <p>Copyright&copy; Cholong Pak All Right Reserved</p>
+        </div>
+    </footer>
+</body>
+
+</html>

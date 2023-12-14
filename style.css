@@ -1,0 +1,200 @@
+body 
+{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    margin: 0; 
+}
+
+#logo
+{
+    margin-top: 20px;
+}
+
+.header-nav 
+{
+    display: flex;
+    align-items: baseline; 
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.header-nav ul 
+{
+    list-style-type: none;
+    margin: 10px;
+    padding: 0;
+    display: flex;
+}
+
+.header-nav li 
+{
+    display: flex;
+    align-items: baseline; 
+    margin: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+}
+
+.header-nav a 
+{
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s;
+    position: relative; 
+}
+
+.header-nav a:hover,
+.header-nav a:focus 
+{
+    color: #4ae44d;
+    text-decoration-line: underline;
+}
+
+.header-nav img 
+{
+    margin-right: 10px; 
+    max-height: 20px; 
+}
+
+#banner img 
+{
+    width: 80%;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+#content 
+{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#content p a
+{
+    color: #ffffff;
+}
+
+#content p a:hover,
+#content p a:focus 
+{
+    color: #4ae44d;
+    font-weight: bold;
+}
+
+.images 
+{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.image-box 
+{
+    width: 45%;
+    margin-bottom: 20px;
+}
+
+.image-box img 
+{
+    width: 100%;
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.image-box p 
+{
+    margin-top: 10px;
+}
+
+#footer-content 
+{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 10px;
+}
+
+#footer-content a 
+{
+    text-decoration: none;
+    color: #959393;
+}
+
+#footer-content a:hover,
+#footer-content a:focus 
+{
+    color: #4ae44d;
+}
+
+#contact h1 
+{
+    display: block;
+    font-weight: bold;
+    margin: 30px;
+}
+
+#contact img
+{
+    align-items: center;
+    width: 600px;
+    margin: 20px;
+}
+
+#contact input[type=checkbox],
+#contact input[type=reset],
+#contact input[type=submit] 
+{
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+#message 
+{
+    line-height: 200px;
+    width: 400px;
+}
+
+fieldset 
+{
+    border: none;
+}
+
+.error 
+{
+    visibility: hidden;
+    color:rgb(248, 6, 6)
+}
+
+
+@media (max-width: 768px) 
+{
+    .images
+    {
+        flex-direction: column;
+    }
+
+    .image-box 
+    {
+        width: 100%;
+    }
+
+    #contact img
+    {
+        align-items: center;
+        width: 50%;
+    }
+
+    .labeltext 
+    {
+        display: block;
+        width: 100%;
+    }
+
+    #contact-image 
+    {
+        width: 80%; 
+    }
+}
